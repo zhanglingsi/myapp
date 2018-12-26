@@ -7,6 +7,7 @@ import 'package:myapp/demo/class4/cards_demo.dart';
 import 'package:myapp/demo/class1/demo1.dart';
 import 'package:myapp/demo/class1/basic_appbar.dart';
 import 'package:myapp/demo/class1/tabbed_appbar.dart';
+import 'package:myapp/demo/class1/appBar_bottom.dart';
 
 // 创建类别 (类别名称 + 类别图标)
 class MyAppDemoCategory {
@@ -137,6 +138,15 @@ List<MyAppDemo> _buildMyAppDemos(){
       routeName: TabbedAppBarSample.routeName,
       documentationUrl: 'https://docs.flutter.io/flutter/material/Card-class.html',
       buildRoute: (BuildContext context) => TabbedAppBarSample(),
+    ),
+    MyAppDemo(
+      title: '具有自定义底部widget的AppBar',
+      subtitle: '任何具有PreferredSize的widget都可以出现在AppBar的底部。',
+      icon: MyAppIcons.bottom_navigation,
+      category: _kClass1,
+      routeName: AppBarBottomSample.routeName,
+      documentationUrl: 'https://docs.flutter.io/flutter/material/Card-class.html',
+      buildRoute: (BuildContext context) => AppBarBottomSample(),
     ),
   ];
 
