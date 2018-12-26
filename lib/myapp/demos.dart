@@ -150,6 +150,7 @@ List<MyAppDemo> _buildMyAppDemos(){
     ),
   ];
 
+  // 动态添加一个菜单项
   assert(() {
     myAppDemos.insert(0,
       MyAppDemo(
