@@ -170,9 +170,11 @@ List<MyAppDemo> _buildMyAppDemos(){
 
 final List<MyAppDemo> kAllMyAppDemos = _buildMyAppDemos();
 
+// 分类集合 数据项
 final Set<MyAppDemoCategory> kAllGalleryDemoCategories =
   kAllMyAppDemos.map<MyAppDemoCategory>((MyAppDemo demo) => demo.category).toSet();
 
+// 分类集合对应的 菜单项 集合
 final Map<MyAppDemoCategory, List<MyAppDemo>> kGalleryCategoryToDemos =
   Map<MyAppDemoCategory, List<MyAppDemo>>.fromIterable(
     kAllGalleryDemoCategories,
