@@ -6,6 +6,7 @@ import 'package:myapp/demo/class3/bottom_navigation_demo.dart';
 import 'package:myapp/demo/class4/cards_demo.dart';
 import 'package:myapp/demo/class1/demo1.dart';
 import 'package:myapp/demo/class1/basic_appbar.dart';
+import 'package:myapp/demo/class1/tabbed_appbar.dart';
 
 // 创建类别 (类别名称 + 类别图标)
 class MyAppDemoCategory {
@@ -124,9 +125,18 @@ List<MyAppDemo> _buildMyAppDemos(){
       subtitle: '一个典型的AppBar，带有标题、操作和溢出的下拉菜单。',
       icon: MyAppIcons.bottom_navigation,
       category: _kClass1,
-      routeName: CardsDemo.routeName,
+      routeName: BasicAppBarSample.routeName,
       documentationUrl: 'https://docs.flutter.io/flutter/material/Card-class.html',
       buildRoute: (BuildContext context) => BasicAppBarSample(),
+    ),
+    MyAppDemo(
+      title: '选项卡式的AppBar',
+      subtitle: '一个以TabBar作为底部widget的AppBar。',
+      icon: MyAppIcons.bottom_navigation,
+      category: _kClass1,
+      routeName: TabbedAppBarSample.routeName,
+      documentationUrl: 'https://docs.flutter.io/flutter/material/Card-class.html',
+      buildRoute: (BuildContext context) => TabbedAppBarSample(),
     ),
   ];
 
